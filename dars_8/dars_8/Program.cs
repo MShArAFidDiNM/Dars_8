@@ -10,6 +10,16 @@ namespace dars_8
     {
         static void Main(string[] args)
         {
+            teskari("salom");
         }
+        public static void teskari(string message )
+        {
+            for (int i = message.Length-1; i >= 0; i--)
+            {
+                Console.Write(message[i]);
+            }
+            Console.ReadLine();
+        }
+        
     }
 }
