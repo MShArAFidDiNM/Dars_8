@@ -10,6 +10,15 @@ namespace dars_8
     {
         static void Main(string[] args)
         {
+            Console.Write("Enter the year : ");
+            string input = Console.ReadLine();
+            int output = int.Parse(input);
+            Console.WriteLine($"Result : {Century(output)} century");
+            Main(args);
+        }
+        public static int Century(int input)
+        {
+            return (input / 100) + 1;
         }
     }
 }
